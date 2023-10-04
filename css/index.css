@@ -1,0 +1,96 @@
+@import url(./styles.css); /* Referenciamos el CSS de uso general. */
+
+body{
+    background-color: #ECEFF4;
+    
+}
+.about-content, .services-content, .shopping-content{
+    background-size: 100%;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+
+}
+
+.about-content{
+    background-image: url(../resource/image/about.png);
+
+}
+
+.services-content{
+    background-color: #0190CD;
+
+}
+
+.shopping-content{
+    background-image: url(../resource/image/shopping.png);
+
+}
+
+.about-content .about{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-30%);
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.about-content .about h1, .services-list .title{
+    font-size: 48px;
+
+}
+
+.about-content .about h1, .about-content .about p, .services h1, .services p{
+    color: #ECEFF4;
+    text-shadow: #2E3440 2px 2px 2px;
+
+}
+
+.buttons{
+    justify-content: center;
+    
+}
+
+.buttons a{
+    cursor: pointer;
+    background-color: #4C566A;
+    padding: 8px 32px;
+    border-radius: 6px;
+    border: none;
+    transition: 0.25s;
+
+}
+
+.buttons a:hover{
+    color: #FFFFFF;
+    background-color: #0190CD;
+
+
+}
+
+.services{
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.services ul{
+    list-style: none;
+
+}
+
+.services img{
+    position: relative;
+    padding: 16px;
+
+}
+
+.services-list{
+    display: flex;
+    flex-direction: column;
+
+}

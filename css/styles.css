@@ -1,0 +1,148 @@
+@font-face{ /* Aquí estoy declarando el nombre y ubicación de una fuente de letras. */
+    font-family: Roboto;
+    src: url(../resource/font/Roboto-Regular.ttf);
+
+}
+
+*{ /* Por comodidad, declaro el color de las letras por defecto de la página y la fuente que usarán. */
+    color: #ECEFF4;
+    font-family: Roboto;
+    font-size: 24px;
+
+}
+
+header, footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 32px;
+    column-gap: 32px;
+    background-color: #2E3440;
+    backdrop-filter: blur(6px);
+
+}
+
+div{
+    display: flex;
+    column-gap: 16px;
+
+}
+
+
+nav{
+    list-style: none;
+
+}
+
+header li{
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 16px;    
+
+}
+
+.account_division{
+    align-items: center;
+
+}
+
+a{
+    text-decoration: none;
+
+}
+
+li a, .log_in{
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: 0.25s ease-in-out;
+}
+
+li a:hover{
+    text-decoration: underline 0.15em #0190CD;
+    transition: text-decoration-color 0.25s;
+
+}
+
+.log_in:hover{
+    color: #0190CD;
+    transform: scale(1.05);
+
+}
+
+.logo{
+    height: 64px;
+    width: auto;
+    cursor: pointer;
+    filter: invert(99%) sepia(10%) saturate(842%) hue-rotate(176deg) brightness(97%) contrast(98%);
+    /*
+    A través de un convertidor de colores de «RGB» a «SVG Filter»
+    (En este caso https://codepen.io/sosuke/pen/Pjoqqp) cambiamos el color del «SVG». 
+    */
+    transition: 0.25s;
+    
+}
+
+.logo:hover{
+    filter: invert(39%) sepia(76%) saturate(2580%) hue-rotate(172deg) brightness(94%) contrast(99%);
+    transform: scale(1.1);
+
+}
+
+.sign_in{
+    background-color: #4C566A;
+    padding: 8px 8px;
+    border-radius: 4px;
+    transition: 0.25s;
+
+}
+
+.sign_in:hover{
+    color: #FFFFFF;
+    background-color: #0190CD;
+}
+
+footer .about, .social{
+    flex-direction: column;
+    
+}
+
+.copyright p{
+    font-size: 12px;
+}
+
+footer .about h1{
+    font-size: 24px;
+
+}
+
+footer .about p{
+    font-size: 16px;
+
+}
+
+.social{
+    text-align: center;
+}
+
+.media{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 6px;
+    filter: invert(99%) sepia(10%) saturate(842%) hue-rotate(176deg) brightness(97%) contrast(98%);
+    transition: 0.25s;
+
+}
+
+.media:hover{
+    filter: invert(39%) sepia(76%) saturate(2580%) hue-rotate(172deg) brightness(94%) contrast(99%);
+
+}
+
+.line{
+    border-left: 2px solid #ECEFF4;
+    height:80%;
+    left: 50%;
+    padding: 16px;
+    
+}
