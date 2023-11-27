@@ -1,0 +1,98 @@
+@import url(./styles.css); /* Referenciamos el CSS de uso general. */
+
+body{
+    background-color: #ECEFF4;
+    
+}
+
+.wrapper{
+    position: relative;
+    background-size: 100%;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+
+}
+
+a {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+a:hover {
+    color: #0190CD;
+}
+
+.wrapper{
+    background-color: #2E3440;
+
+}
+
+.wrapper .login{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-30%);
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+form div{
+    margin: 12px;
+}
+
+.wrapper{
+    color: #ECEFF4;
+}
+
+button{
+    cursor: pointer;
+    background-color: #4C566A;
+    padding: 8px 32px;
+    border-radius: 6px;
+    border: none;
+    transition: 0.25s;
+
+}
+
+form{
+    padding: 10px;
+    margin: 6px;
+}
+
+input{
+    color: #2E3440
+}
+
+.remember {
+    display: block;
+}
+
+.input {
+    display: flex;
+}
+
+.confirm {
+    display: none;
+}
+
+button{
+    cursor: pointer;
+    background-color: #4C566A;
+    padding: 8px 32px;
+    border-radius: 6px;
+    border: none;
+    transition: 0.25s;
+
+}
+
+button:hover{
+    color: #FFFFFF;
+    background-color: #0190CD;
+
+
+}

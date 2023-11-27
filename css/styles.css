@@ -46,7 +46,7 @@ header li{
 
 }
 
-a{
+header a, footer a{
     text-decoration: none;
 
 }

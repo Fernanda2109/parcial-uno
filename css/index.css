@@ -4,7 +4,9 @@ body{
     background-color: #ECEFF4;
     
 }
-.about-content, .services-content, .shopping-content{
+
+.about-content, .services-content, .shopping-content {
+    position: relative;
     background-size: 100%;
     align-items: center;
     display: flex;
@@ -29,7 +31,7 @@ body{
 
 }
 
-.about-content .about{
+.about-content .about {
     width: 80%;
     position: absolute;
     top: 50%;
@@ -39,7 +41,7 @@ body{
 
 }
 
-.about-content .about h1, .services-list .title{
+.about-content .about h1, .services-list .title, .wrapper{
     font-size: 48px;
 
 }
@@ -55,7 +57,7 @@ body{
     
 }
 
-.buttons a{
+.buttons a, button{
     cursor: pointer;
     background-color: #4C566A;
     padding: 8px 32px;
@@ -65,7 +67,7 @@ body{
 
 }
 
-.buttons a:hover{
+.buttons a:hover, button:hover{
     color: #FFFFFF;
     background-color: #0190CD;
 

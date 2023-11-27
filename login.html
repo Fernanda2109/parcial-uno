@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Exotic Friend - Home</title>
-    
-    <!-- Referenciamos el CSS a usar: -->
-    <link rel="stylesheet" href="./css/index.css">
-
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/login.css">
 </head>
+
 <body>
     <header> <!-- Creamos un «header» para crear la barra de navegación. -->
         <div>
@@ -22,59 +20,39 @@
             </ul>
         </nav>
         <div class="account_division">
-            <a href="login.html" class="log_in">Log In</a>
-            <a href="#" class="sign_in">Sign In</a>
+            <a href="index.html" class="log_in">Home</a>
         </div>
     </header>
-
-    <!-- El resto de la página -->
-
-    <div class="about-content">
-        <div class="about">
-            <h1>Wellcome to My Exotic Friend!</h1>
-            <p>
-                We know that animals are more than just pets; They are special members of our families. Our store is a place where animal lovers like you can find everything they need to care for and pamper their furry, scaly, or feathered companions.
-            </p>
-            <div class="buttons">
-                <a>
-                    Adopt A Pet
-                </a>
-                <a href="#about">
-                    More About Us
-                </a>
-            </div>
+    <div class="wrapper">
+        <div class="login">
+            <h2 id="title">Login</h2>
+            <form action="#">
+                <div class="input">
+                    <span class="icon"></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input">
+                    <span class="icon"></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="confirm" id="confirm">
+                    <span class="icon"></span>
+                    <input type="password" required>
+                    <label>Confirm Password</label>
+                </div>
+                <div class="remember" id="remember">
+                    <label>
+                        <input type="checkbox">
+                        Remember me
+                    </label>
+                </div>
+                <button id="button" type="submit" class="buttons">Login</button>
+            </form>
+            <a onclick="register()" id="change">You don't have an account? Sign in!</a>
         </div>
     </div>
-
-    <div class="services-content">
-        <div class="services">
-            <img src="./resource/image/services.png" height="600px"/>
-            <div class="services-list">
-                <h1 class="title">We offer many services!</h1>
-                <ul>
-                    <li>
-                        <h1>Shopping!</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nihil assumenda amet?</p>
-                    </li>
-                    <li>
-                        <h1>Veterinary!</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nihil assumenda amet?</p>
-                    </li>
-                    <li>
-                        <h1>Adopting!</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nihil assumenda amet?</p>
-                    </li>*
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="shopping-content">
-        <div class="shopping">
-        </div>
-    </div>
-
-    <!-- Finaliza el contenido de la página -->
 
     <footer> <!-- Creamos un «footer». -->
         <div>
@@ -104,6 +82,6 @@
             </p>
         </div>
     </footer>
-    <script src="./js/login.js"/>
 </body>
+<script src="./js/login.js"></script>
 </html>
